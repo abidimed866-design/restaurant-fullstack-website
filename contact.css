@@ -1,0 +1,201 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:serif;
+}
+
+body{
+background:#1a0f0a;
+color:#fff;
+margin: 0;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+
+align-items:center;
+padding:20px 60px;
+background:black;
+}
+
+nav a{
+margin:0 15px;
+color:white;
+text-decoration:none;
+}
+
+.btn{
+background:linear-gradient(#d4a017,#8b5a2b);
+border:none;
+padding:12px 25px;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+/* HERO */
+.hero{
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F037%2F281%2F050%2Fsmall_2x%2Fai-generated-a-modern-restaurant-interior-that-captivates-the-senses-enhancing-the-culinary-journey-free-photo.jpeg&f=1&nofb=1&ipt=586fb168b9461470e89a3530b5aaf8291522e028e07fef231a157d305fc8e867");
+background-size:cover;
+}
+
+.hero h1{
+font-size:50px;
+color:gold;
+}
+
+.hero p{
+margin-top:10px;
+}
+/* NAV LINKS */
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: #ffd700; 
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: 0.4s ease;
+}
+
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* CONTACT */
+.contact{
+background-color: black;
+display:flex;
+padding:50px;
+gap:40px;
+}
+
+/* LEFT */
+.left{
+width:30%;
+}
+
+.box{
+border:1px solid gold;
+padding:20px;
+margin-bottom:20px;
+}
+
+.map{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+/* RIGHT */
+.right{
+width:70%;
+}
+
+.top-img{
+width:100%;
+height:250px;
+object-fit:cover;
+margin-bottom:20px;
+border:2px solid gold;
+}
+
+.right h2{
+color:gold;
+margin-bottom:20px;
+}
+
+form input, form textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+background:transparent;
+border:1px solid gold;
+color:#fff;
+}
+
+.row{
+display:flex;
+gap:10px;
+}
+
+textarea{
+height:120px;
+}
+
+button{
+background:linear-gradient(#d4a017,#8b5a2b);
+border:none;
+padding:12px 25px;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+}
+
+
+.socials span{
+margin:10px;
+padding:10px;
+
+}
+.btn a{
+    text-decoration: none;
+}
+/* FOOTER */
+
+.footer-top{
+display:flex;
+justify-content:space-around;
+padding:40px;
+background:#111;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+}
+
+
+.top-image{
+width:100%;
+height:300px;
+object-fit:cover;
+border:2px solid gold;
+margin-bottom:20px;
+}
+
+.info-box{
+border:1px solid gold;
+padding:20px;
+}

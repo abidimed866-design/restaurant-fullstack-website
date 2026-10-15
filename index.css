@@ -1,0 +1,251 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Georgia', serif;
+}
+
+body{
+    background:#2b1b14;
+    color:white;
+    animation-duration: 5s;
+}
+
+/* HERO */
+.hero{
+    height:80vh;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:60px;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+    position:relative;
+    max-width:600px;
+}
+
+nav{
+    position:absolute;
+    top:30px;
+    left:60px;
+    right:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:2;
+}
+nav li{
+    cursor:pointer;
+    position:relative;
+    transition:0.3s;
+}
+
+nav li:hover{
+    color:#b88a4a;
+}
+
+
+nav li::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:#b88a4a;
+    transition:0.3s;
+}
+.btn-gold{
+background:linear-gradient(#d4a017,#8b5a2b);
+border:none;
+padding:12px 25px;
+color:white;
+cursor:pointer;
+border-radius:5px;}
+.oo{
+    position: absolute;
+    animation-name: gg;
+    animation-duration: 5s;
+}
+@keyframes gg {
+    0%{
+        opacity: 0;
+    }
+    85%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+/* Hover effect */
+.btn-gold:hover,
+.btn-outline:hover{
+    transform: scale(1.08);
+}
+
+/* Extra classy effect for gold */
+.btn-gold:hover{
+    box-shadow: 0 8px 20px rgba(184,138,74,0.6);
+}
+
+/* Extra effect for outline */
+.btn-outline:hover{
+    background:#b88a4a;
+    border:1px solid #b88a4a;
+}
+nav li:hover::after{
+    width:100%;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav li{
+    cursor:pointer;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn-gold{
+    background:#b88a4a;
+    border:none;
+    padding:12px 25px;
+    color:white;
+    cursor:pointer;
+    margin-top: 10px;
+}
+
+.btn-outline{
+    background:transparent;
+    border:1px solid white;
+    padding:12px 25px;
+    color:white;
+    cursor:pointer;
+}
+
+/* ABOUT */
+.about{
+    background: url('WhatsApp\ Image\ 2026-02-28\ at\ 15.38.24.jpeg') center/cover no-repeat;
+
+
+    color:#2b1b14;
+    display:flex;
+    padding:80px 60px;
+    
+    gap:40px;
+    align-items:flex-start;
+}
+
+.about-text{
+    flex:1;
+   
+}
+
+.about-img img{
+    width:500px;
+}
+
+/* SIGNATURE */
+.signature{
+    background:#3a2319;
+    padding:80px 60px;
+    text-align:center;
+}
+
+.signature h2{
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    margin-bottom:40px;
+}
+
+.card{
+    width:300px;
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+}
+
+.center{
+    margin:auto;
+}
+
+/* VISIT */
+.visit{
+    background:#2b1b14;
+    display:flex;
+    align-items: flex-start;
+    padding:80px 60px;
+    gap:80px;
+    align-items:center;
+}
+
+.map img{
+    width:500px;
+}
+
+.info h2{
+    margin-bottom:20px;
+}
+
+.info h3{
+    margin:20px 0 10px;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    
+}

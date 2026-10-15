@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Restaurant</title>
+<link rel="stylesheet" href="mena.css">
+</head>
+<body>
+
+<!-- TOP NAVBAR -->
+<header>
+<div class="logo">Restaurant</div>
+
+<nav>
+ <li><a href="index.html">Home</a></li>
+  <li><a href="mena.html">Menu</a></li>
+  <li><a href="contact.html">contact</a></li>
+   <li ><a href="reserve.html">Reserve</a></li>
+</nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay">
+        <h1>Our Menu</h1>
+
+        <div class="categories">
+            <button onclick="showMenu('drinks')">Beverages</button>
+            <button onclick="showMenu('desserts')">Desserts</button>
+            <button onclick="showMenu('main')">Main</button>
+            <button onclick="showMenu('starters')">Starters</button>
+        </div>
+    </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-container">
+    <div id="menu-grid" class="grid"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <div class="about-text">
+        <h2>About Our Restaurant</h2>
+        <p>
+            Welcome to our restaurant where we serve the best food and drinks.
+            Enjoy a luxury experience with high quality service and delicious meals.
+        </p>
+    </div>
+    <div class="about-img">
+        <img src="https://i.pinimg.com/1200x/45/ee/d7/45eed716b98117b6c275f5f7e4460941.jpg">
+    </div>
+</section>
+
+<!-- EXTRA GALLERY -->
+<section class="gallery">
+    <img src="https://i.pinimg.com/1200x/98/f9/9d/98f99d517e3aae3ff0bb64af40cf9e05.jpg">
+    <img src="https://i.pinimg.com/736x/d7/1f/ad/d71fad54e61c215e40c3fb8945dfe5c8.jpg">
+    <img src="https://i.pinimg.com/736x/cf/fc/be/cffcbef1094e8b3fd02d9338f0b0963c.jpg">
+    <img src="https://i.pinimg.com/736x/02/3c/97/023c978529252da956e4ef3412735956.jpg">
+</section>
+
+<!-- RESERVE -->
+<section class="reserve">
+    <h2>Reserve Your Table</h2>
+    <p>Book now and enjoy a special experience</p>
+    <button class="btn"> <a href="reserve.html">Reserve Now</a></button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+
+        <div>
+            <h3>Restaurant</h3>
+            <p>Best food & drinks experience</p>
+        </div>
+
+        <div>
+            <h3>Links</h3>
+            <p>Menu</p>
+            <p>Reserve</p>
+            <p>Contact</p>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>Email: test@mail.com</p>
+            <p>Phone: +212000000</p>
+        </div>
+
+    </div>
+
+    <p class="copy">© 2026 All Rights Reserved</p>
+</footer>
+
+<script src="mena.js"></script>
+
+</body>
+</html>

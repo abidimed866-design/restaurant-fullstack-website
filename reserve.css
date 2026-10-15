@@ -1,0 +1,218 @@
+body{
+margin:0;
+font-family:serif;
+color:white;
+background:#0e0e0e;
+background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:serif;
+}
+
+/* HEADER */
+nav {
+    display: flex;          /* هادي كتقول للمتصفح يجمع كاع الروابط ف سطر واحد */
+    flex-direction: row;    /* هادي كتفرض عليهم يترتبوا بـالعـرض (أفقي) ماشي بالطول */
+    align-items: center;    /* هادي كتجيب الروابط مقادين ف الوسط من الناحية ديال الارتفاع */
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:black;
+}
+
+nav a{
+margin:0 15px;
+color:white;
+text-decoration:none;
+}
+nav li {
+    list-style: none;    /* هادي هي اللي كتحيد النقط (les points) */
+    display: flex;       /* هادي باش تضمن القائمة حتى هي تجي بالعرض */
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+background:linear-gradient(#d4a017,#8b5a2b);
+border:none;
+padding:12px 25px;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+/* NAV LINKS */
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+
+/* الخط مخبي فالأول */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: #ffd700; /* أصفر */
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: 0.4s ease;
+}
+
+/* ملي تدير hover */
+nav a:hover::after {
+    width: 100%;
+}
+
+/* زيادة تأثير خفيف */
+nav a:hover {
+    color: #ffd700;
+}
+
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftoohotel.com%2Fwp-content%2Fuploads%2F2022%2F09%2FTOO_restaurant_Panoramique_vue_Paris_nuit_v2-scaled.jpg&f=1&nofb=1&ipt=62dd5cea2e29d5dc4b3532b32cf507c2610e79781fedee943c11ecd1594d7c7b") center/cover;
+}
+
+.hero h1{
+font-size:60px;
+font-family:cursive;
+}
+
+.hero p{
+margin:10px 0 20px;
+}
+
+
+
+/* MENU LINKS */
+
+.menu-links{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:15px;
+background:#1a1a1a;
+}
+
+.menu-links a{
+color:white;
+text-decoration:none;
+}
+
+
+
+/* RESERVATION */
+
+.reservation{
+display:flex;
+gap:50px;
+padding:60px;
+justify-content:center;
+}
+
+.form{
+width:40%;
+}
+
+.form input,
+.form select,
+.form textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+background:black;
+border:1px solid #555;
+color:white;
+}
+
+.row{
+display:flex;
+gap:10px;
+}
+
+.row select{
+width:50%;
+}
+
+.form button{
+width:100%;
+margin-top:10px;
+}
+
+
+
+/* RIGHT SIDE */
+
+.right{
+width:40%;
+}
+
+.right img{
+width:100%;
+border:2px solid gold;
+}
+
+.info-box{
+border:1px solid gold;
+padding:20px;
+margin-top:20px;
+}
+
+.info-box h3{
+text-align:center;
+font-family:cursive;
+}
+
+
+
+/* FOOTER */
+
+.footer-top{
+display:flex;
+justify-content:space-around;
+padding:40px;
+background:#111;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+}
+.right{
+width:40%;
+}
+
+.top-image{
+width:100%;
+height:300px;
+object-fit:cover;
+border:2px solid gold;
+margin-bottom:20px;
+}
+
+.info-box{
+border:1px solid gold;
+padding:20px;
+}
